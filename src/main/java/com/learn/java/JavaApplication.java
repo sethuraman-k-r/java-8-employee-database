@@ -25,8 +25,7 @@ public class JavaApplication {
 //		departmentServices.showDepartments();
 
 		EmployeeServices employeeServices = context.getBean(EmployeeServices.class);
-//		employeeServices.genderWiseEmployeeCategory();
-		employeeServices.calculateEmployeeExperiences();
+		employeeServices.genderWiseEmployeeCategory();
 	}
 
 }

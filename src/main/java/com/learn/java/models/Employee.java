@@ -2,7 +2,7 @@ package com.learn.java.models;
 
 import java.io.Serializable;
 import javax.persistence.*;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 
@@ -20,7 +20,6 @@ public class Employee implements Serializable {
 	@Column(name="emp_no")
 	private int empNo;
 
-	@Temporal(TemporalType.DATE)
 	@Column(name="birth_date")
 	private Date birthDate;
 
@@ -29,7 +28,6 @@ public class Employee implements Serializable {
 
 	private String gender;
 
-	@Temporal(TemporalType.DATE)
 	@Column(name="hire_date")
 	private Date hireDate;
 
