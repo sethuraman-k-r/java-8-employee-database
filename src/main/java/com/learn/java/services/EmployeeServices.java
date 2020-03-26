@@ -19,7 +19,7 @@ public class EmployeeServices {
     @Autowired
     private EmployeeRepository employeeRepository;
 
-    public void genderWiseEmployeeCategory(){
+    public void getEmployeeInfo(){
         List<Employee> employees = employeeRepository.findAll();
 
         Long totalMaleEmployees = employees.stream().filter(e -> e.getGender().equalsIgnoreCase("M")).count();
@@ -68,6 +68,8 @@ public class EmployeeServices {
                     .sorted((e1, e2) -> e2.getValue().compareTo(e1.getValue()))
                     .limit(10)
                     .forEach(System.out::println);
+
+
     }
 
 }

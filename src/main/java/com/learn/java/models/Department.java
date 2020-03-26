@@ -93,4 +93,8 @@ public class Department implements Serializable {
 		return deptManager;
 	}
 
+	@Override
+	public String toString() {
+		return deptNo;
+	}
 }

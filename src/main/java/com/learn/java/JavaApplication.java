@@ -21,11 +21,12 @@ public class JavaApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(JavaApplication.class, args);
-//		DepartmentServices departmentServices = context.getBean(DepartmentServices.class);
-//		departmentServices.showDepartments();
 
 		EmployeeServices employeeServices = context.getBean(EmployeeServices.class);
-		employeeServices.genderWiseEmployeeCategory();
+		employeeServices.getEmployeeInfo();
+
+		DepartmentServices departmentServices = context.getBean(DepartmentServices.class);
+		departmentServices.getDeptInfo();
 	}
 
 }
