@@ -6,6 +6,7 @@ import com.learn.java.repository.DepartmentRepository;
 import com.learn.java.repository.DeptManagerRepository;
 import com.learn.java.services.DepartmentServices;
 import com.learn.java.services.EmployeeServices;
+import com.learn.java.services.SalaryServices;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -27,6 +28,9 @@ public class JavaApplication {
 
 		DepartmentServices departmentServices = context.getBean(DepartmentServices.class);
 		departmentServices.getDeptInfo();
+
+		SalaryServices salaryServices = context.getBean(SalaryServices.class);
+		salaryServices.getSalaryInfo();
 	}
 
 }
