@@ -1,10 +1,9 @@
 package com.learn.java.services;
 
 import com.learn.java.models.Salary;
-import com.learn.java.models.SalaryPK;
 import com.learn.java.repository.SalaryRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
